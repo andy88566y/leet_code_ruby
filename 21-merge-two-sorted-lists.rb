@@ -14,29 +14,29 @@ class ListNode
     end
 end
 
-class LinkedList
-  def initialize(val)
-    @head = ListNode.new(val)
-  end
+# class LinkedList
+#   def initialize(val)
+#     @head = ListNode.new(val)
+#   end
 
-  def add(val)
-    current = @head
-    while current.next != nil
-      current = current.next
-    end
-    current.next = ListNode.new(val)
-  end
+#   def add(val)
+#     current = @head
+#     while current.next != nil
+#       current = current.next
+#     end
+#     current.next = ListNode.new(val)
+#   end
 
-  def return_list
-    elements = []
-    current = @head
-    while current.next != nil
-      elements << current
-      current = current.next
-    end
-    elements << current
-  end
-end
+#   def return_list
+#     elements = []
+#     current = @head
+#     while current.next != nil
+#       elements << current
+#       current = current.next
+#     end
+#     elements << current
+#   end
+# end
 
 def printList(node)
   if node == nil
